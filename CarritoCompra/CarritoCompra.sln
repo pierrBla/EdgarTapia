@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarritoCompra.Shared", "CarritoCompra.Shared\CarritoCompra.Shared.csproj", "{AF520DEF-53F1-4E43-9322-8E6493A8F03B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarritoCompra.Shared", "CarritoCompra.Shared\CarritoCompra.Shared.csproj", "{AF520DEF-53F1-4E43-9322-8E6493A8F03B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarritoCompra.Api", "CarritoCompra.Api\CarritoCompra.Api.csproj", "{2C2EF83D-4B4F-48F5-8FB2-14174ABCEA15}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarritoCompra.Api", "CarritoCompra.Api\CarritoCompra.Api.csproj", "{2C2EF83D-4B4F-48F5-8FB2-14174ABCEA15}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarritoCompra.Web", "CarritoCompra.Web\CarritoCompra.Web.csproj", "{B8EDB124-4E1B-412F-B92D-1EE9528B89B8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarritoCompra.Web", "CarritoCompra.Web\CarritoCompra.Web.csproj", "{B8EDB124-4E1B-412F-B92D-1EE9528B89B8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarritoCompra.Mobile", "CarritoCompra.Mobile\CarritoCompra.Mobile.csproj", "{2AF11122-FD91-417A-80DD-556866F6D135}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarritoCompra.Mobile", "CarritoCompra.Mobile\CarritoCompra.Mobile.csproj", "{2AF11122-FD91-417A-80DD-556866F6D135}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

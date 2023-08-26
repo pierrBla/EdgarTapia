@@ -23,7 +23,7 @@ namespace CarritoCompra.Api.Controllers
         }
 
 
-        //metodos GET 
+        //metodos GET TRAER INFORMACION
       
 
         [HttpGet]
@@ -31,8 +31,17 @@ namespace CarritoCompra.Api.Controllers
         {
             return Ok(await _context.Countries.ToListAsync());
         }
-
-
+        //metodo para editar
+        [HttpGet("{id:int}")]
+        public async Task<IActionResult> GetAsync(int id)
+        {
+            var country = await _context.Countries.FirstOrDefaultAsync(x => x.Id == id);
+            if(country == null)
+            {
+                return NotFound();
+            }
+            return Ok(country);
+        }
 
         //metodos POST
 
@@ -44,5 +53,31 @@ namespace CarritoCompra.Api.Controllers
             await _context.SaveChangesAsync();
             return Ok(country);
         }
+
+        //metodos PUT  MODIFICAR
+
+        [HttpPut]
+
+        public async Task<ActionResult> PutAsync(Country country)
+        {
+            _context.Update(country);
+            await _context.SaveChangesAsync();
+            return Ok(country);
+        }
+
+        //metodo para Eliminar
+        [HttpDelete("{id:int}")]
+        public async Task<IActionResult> DeleteAsync(int id)
+        {
+            var country = await _context.Countries.FirstOrDefaultAsync(x => x.Id == id);
+            if (country == null)
+            {
+                return NotFound();
+            }
+            _context.Remove(country);
+            await _context.SaveChangesAsync();
+            return NoContent();
+        }
+
     }
 }
